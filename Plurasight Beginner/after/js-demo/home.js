@@ -44,9 +44,84 @@
 // showMessage(saved);
 // console.log(saved); -- we use this to wipeout our code.
 
-let person = {
-    firstName: 'John',
-    lastName: 'Adams'
-};
+// let person = {
+//     firstName: 'John',
+//     lastName: 'Adams'
+// };
 
-console.log(person.firstName);
+// console.log(person.firstName);
+
+
+// let price = 20;
+// if (price !== 15) {
+//     showMessage('discounted');
+// }
+
+// false = false, 0, "" or ", null, endefined, NaN 
+// truthy everything not falsy, true, >0, "0"
+
+// if ("0") { //without "" it wouldn't show 'true'
+//     showMessage('true');
+// }
+
+// if ( +(1.1 + 1.3).toFixed(2) === 2.4) { //if i would remove !, and make it === -> it would show 'true'
+//     let message = 'true'
+//     showMessage(message);
+// }
+
+// let price = 1;
+// if (price > 10) {
+//     showMessage('true');
+// }
+// else if (price > 5) {
+//     showMessage('greater than 5');
+// }
+// else if (price < 4) {
+//     showMessage('less than 4');
+// }
+
+// let message = (price > 10) ? 'expensive' : 'cheap;, if price is greater than then, true is 'expensive' if not it would be false 'cheap'
+
+// let price = 20;
+
+// let message = (price < 10) ? 'yes' : 'no';
+// showMessage(message);
+// price > 10 ? showMessage ('yes') : showMessage('no'); // parentheses around price > 10, are not required. But it should be used, to be more clear.
+
+// if (true) {
+//     let value = 'yes'
+//     showMessage(value);
+// }
+
+// console.log(value); - it will give us an error, because let works only in strict block!!!!!!!
+
+// if (true) {
+//     var value = 'yes';
+//     showMessage(value);
+// }
+
+// console.log(value); we shouldn=t use "var" because it goes out of the block, and it might be confusing for other ppl when they see our code and work on it!!!!
+
+
+// if (true) {
+//     const value = 'yes';
+//     showMessage(value);
+// }
+
+// console.log(value);
+
+// for (let i = 0; i <= 5; i++) {
+//     console.log(i);
+// }
+
+// let i = 4;
+// while (i > 0) {
+//     console.log(i);
+//     i--;
+// }
+
+// let i = -4;
+// do {
+//     console.log(i);
+//     i--;
+// } while (i > 0);
