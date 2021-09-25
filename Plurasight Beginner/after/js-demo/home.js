@@ -124,4 +124,64 @@
 // do {
 //     console.log(i);
 //     i--;
-// } while (i > 0);
+// } while (i > 0); it will execute always almost one
+
+// function logMessage() {
+//     console.log('Here is a message');
+// }
+
+// logMessage();
+
+// let fn = function Fuction () {
+//     console.log('Here is a message');
+// }
+
+// fn(); we used second name of fuction i mean "fuction Fuction ()" is for debugging purposes, it makes easier to find buggs in the future :)
+
+
+// let fn = function Fuction (message, firstName) {
+//     console.log(message);
+//     console.log(firstName);
+// }
+
+// fn('Hello', 'John'); //if we forget one of the arguments, we will get 'undefined' bug in the console.
+
+// function getSecretCode(value) {
+//     let code = value * 42;
+//     return code;
+// }
+
+// let secretCode = getSecretCode(2);
+// showMessage(secretCode); // if we would forget "return", and we are going to use console.log, we'll see undefined in the console.
+
+// let key = 42;
+
+// function getSecretCode(value) {
+//     let code = value * key;
+//     return code;
+// } //function can use variables outside the function, but we can't use variables defined in the function, so function will find let key = 42;
+// //but we couldn't use variable code which is inside the fuction
+
+// let secretCode = getSecretCode(2);
+// showMessage(secretCode);
+
+// let key = 42;
+
+// function getSecretCode(value) {
+    
+//     let keyGenerator = function() {
+//         let key = 12;
+//         console.log('in keyGenerator: ', key);
+//         return key;
+//     } //function finished executing
+
+//     let code = value * keyGenerator();
+//     console.log(' in getSecretCode: ', key);
+//     return code; // key is global right now "42"
+
+// }
+
+// let secretCode = getSecretCode(2);
+// showMessage(secretCode);
+
+// changePercentOff(50); <-- we defined another function in utils.js and we can change "percent-off" parameter
