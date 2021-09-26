@@ -262,18 +262,85 @@
 //     console.log('click');
 // });
 
-const button = document.getElementById('see-review');
+// const button = document.getElementById('see-review');
 
-button.addEventListener('click', function() {
+// button.addEventListener('click', function() {
    
-    const review = document.getElementById('review');
+//     const review = document.getElementById('review');
 
-    if(review.classList.contains('d-none')) {
-        review.classList.remove('d-none');
-        button.textContent = 'CLOSE REVIEW';
-    }
-    else {
-        review.classList.add('d-none');
-        button.textContent = 'SEE REVIEW';
-    }
-});
+//     if(review.classList.contains('d-none')) {
+//         review.classList.remove('d-none');
+//         button.textContent = 'CLOSE REVIEW';
+//     }
+//     else {
+//         review.classList.add('d-none');
+//         button.textContent = 'SEE REVIEW';
+//     }
+// });
+
+// const values = ['a', 'b', 'c'];
+// console.log(Array.isArray(values));
+
+// let values = ['a', 'b', 'c'];
+// console.log(values[2]);
+
+// let values = ['a', 'b', 'c'];
+// values[0] = 'aaa';
+// console.log(values[0]);
+
+//  const values = ['a', 'b', 'c'];
+//  values.push('d');
+//  console.log(values);
+
+//  const values = ['a', 'b', 'c'];
+//  const last = values.pop();
+//  console.log(values, last);
+
+//  const values = ['a', 'b', 'c'];
+//  const first = values.shift();
+//  console.log(values, first);
+
+//  const values = ['a', 'b', 'c'];
+//  values.unshift('hello', 'world');
+//  console.log(values);
+
+// // const values = ['a', 'b', 'c', 'd', 'e'];
+// const newValues = values.slice(1, 3);
+// console.log(newValues);
+
+// const values = ['a', 'b', 'c', 'd', 'e'];
+// values.splice(2, 1, 'hello'); --- 2 is where we start the splice, 1 is number of characters which we want to delete, and 'hello' is string which we want to add
+// console.log(values);
+
+
+// const values = ['a', 'b', 'c'];
+// console.log(values.indexOf('b'));
+
+// const values = ['a', 'b', 'c', 'd', 'z'];
+
+// const set = values.filter(function(item) {
+//     console.log('item: ', item);
+//     return item > 'b';
+// });
+
+// console.log(set);
+
+
+// const values = ['a', 'bbb', 'c'];
+
+// const found = values.find(function(item) {
+//     return item.length > 1;
+// });
+
+// console.log(found);
+
+// const values = ['a', 'b', 'c'];
+
+// values.forEach(function(item) {
+//     console.log(item);
+// });
+
+const containers = document.getElementsByClassName('container');
+
+containers[0].classList.add('d-none');
+console.log(containers);
