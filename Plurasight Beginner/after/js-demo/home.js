@@ -184,4 +184,96 @@
 // let secretCode = getSecretCode(2);
 // showMessage(secretCode);
 
-// changePercentOff(50); <-- we defined another function in utils.js and we can change "percent-off" parameter
+// changePercentOff(50); <-- we defined another function in utils.js and we can change "percent-off" parameter 
+
+// let mySymbol = Symbol();
+
+
+// let person = {
+//     name: 'John',
+//     age: 32,
+//     partTime: false
+//     [mySymbol]: 'secretInformation'
+// };
+
+// person.age = 33;
+// // person['age'] = 34;
+
+// showMessage(person.age);
+
+// let person = {
+//     name: 'John',
+//     age: 32,
+//     partTime: false,
+//     showInfo: function(realAge) {
+//         showMessage(this.name + ' is ' + realAge);
+//     }
+// };
+
+// person.showInfo(34);
+// // showMessage (typeof person.showInfo);
+
+
+// let message = 'Hello';
+
+// function changeMessage(message) {
+//     message = 'Hi!';
+// }
+
+// changeMessage(message);
+
+// showMessage(message);
+
+// let person = {
+//     name: 'John',
+//     age: 32,
+//     partTime: false
+// };
+
+// function incrementAge(person) {
+//     person.age++;
+// }
+
+// incrementAge(person);
+
+// showMessage(person.age);
+
+// !!! Somme example of documentation from developer.mozilla
+
+// let now = new Date();
+// showMessage(now.toDateString());
+
+// showMessage(Math.random());
+
+// let s = 'Hello';
+// showMessage(s.charAt(0));
+
+// DOM Interfaces - again from mozilla developer.
+//HTMLElemnt - style property gives us possibility to overwrite css to style our web page
+
+// const header = document.getElementById('message');
+
+// header.style.fontWeight = '400';
+// header.style.color = '#000';
+
+// const button = document.getElementById('see-review');
+
+// button.addEventListener('click', function() {
+//     console.log('click');
+// });
+
+const button = document.getElementById('see-review');
+
+button.addEventListener('click', function() {
+   
+    const review = document.getElementById('review');
+
+    if(review.classList.contains('d-none')) {
+        review.classList.remove('d-none');
+        button.textContent = 'CLOSE REVIEW';
+    }
+    else {
+        review.classList.add('d-none');
+        button.textContent = 'SEE REVIEW';
+    }
+});
