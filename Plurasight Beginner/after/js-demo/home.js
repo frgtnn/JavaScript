@@ -340,7 +340,46 @@
 //     console.log(item);
 // });
 
-const containers = document.getElementsByClassName('container');
+// const containers = document.getElementsByClassName('container');
 
-containers[0].classList.add('d-none');
-console.log(containers);
+// containers[0].classList.add('d-none');
+// console.log(containers);
+
+//we are learning here about scopes (global, function etc.)
+
+// const app =  { //its better to define variables as "one" variable to be constant, it's better for JS 
+//     productId: 12345,
+//     userName: 'Joe',
+//     orderNumber: 789
+// };
+//global scope, we have second file which is utils.js, where we have another two variables which are global 
+
+// function showProductId() {
+//     let productId = 12345; //FUNCTION SCOPE - we can't use it outside it, so when we will use console.log outside, we are going to get an error.
+//     console.log(productId;)
+// }
+
+// showProductId();
+
+// function showProductId () {
+//     let productId = 12345;
+
+//     function fix() {
+//         let productId = 45678;
+//         console.log('in fix: ', productId);
+//     }
+
+//     fix();
+
+//     console.log('in showProductId: ', productId);
+// }
+
+// showProductId();
+
+// productId = 456;
+
+// console.log(productId);
+
+// let productId = 123;
+
+//its good to start our javascript files with 'use strict';.
