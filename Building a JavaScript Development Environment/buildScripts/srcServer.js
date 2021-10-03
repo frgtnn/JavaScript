@@ -23,4 +23,5 @@ app.listen(port, function(err) {
 //ngrok - easy setup, secure
 //vercel, surge - no firewall hole, hosting persists. Vercel hosts node, surge supports only static files.
 
-
+//** Automation!
+//bit.ly/npmvsgulp
