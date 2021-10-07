@@ -1,15 +1,15 @@
-import {expect} from 'chai';
+import { expect } from "chai";
 import jsdom from "jsdom";
-import fs from 'fs';
+import fs from "fs";
 
-describe('Our first test', () => {
-  it('should pass', () => {
+describe("Our first test", () => {
+  it("should pass", () => {
     expect(true).to.equal(true);
   });
 });
 
-describe('index.html', () => {
-  it('should have h1 that says Users', () => {
+describe("index.html", () => {
+  it("should have h1 that says users", () => {
     const index = fs.readFileSync("./src/index.html", "utf-8");
     const { JSDOM } = jsdom;
     const dom = new JSDOM(index);
