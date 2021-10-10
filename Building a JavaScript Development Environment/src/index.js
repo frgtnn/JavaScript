@@ -1,3 +1,8 @@
+// Three tips for Project Structre
+//1. Put JS in a .js file
+//2. Consider organiying by feature
+//3. Extract logic into "POJO's"
+
 import "./index.css";
 import { getUsers, deleteUser } from "./api/userApi";
 
