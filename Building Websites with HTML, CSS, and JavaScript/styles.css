@@ -1,0 +1,23 @@
+.desktop, .print {
+    display: none; /* hiding elements */
+}
+
+@media print {
+    .mobile, .dekstop {
+        display: none;
+    }
+
+    .print {
+        display: block; /* after that if we would print our website, "print" would be printed */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+}
